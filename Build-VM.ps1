@@ -79,7 +79,7 @@ $virtualMachineSize = Read-Host -Prompt "Enter the size of the Virtual Machine y
 $nicName = ('vm-'+$VirtualMachineName.ToLower()+'-nic')
 
 #Provide name for storage account for boot diagnostics
-$storagediagname = ('ia3psa'+$VirtualMachineName.ToLower()+'diag')
+$storagediagname = ('sa'+$VirtualMachineName.ToLower()+'diag')
 
 #Provide boot diagnostics storage account type
 $storagediagsku = Read-Host -Prompt "Enter the type of storage you would like to use for the boot diagnostics storage account, this can be Standard_LRS, Standard_GRS or Standard_RAGRS"
